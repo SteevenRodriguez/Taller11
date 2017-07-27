@@ -19,8 +19,30 @@ double obtenerTiempoActual(){
 	return secs + nano;
 }
 
-int main (int argc, char *argv[]){
 
+//estructura para pasar el arreglo y los indices
+typedef struct arregloindices{
+	int arreglo[];
+	int inicio;
+	int final;
+} estructura;
+
+void * funcion_hilo(void *arg){
+	
+	estructura *argumentos = (estructura *)arg;		//convertimos al tipo de dato correcto
+
+	int i = 0;
+
+	int suma = 0;
+	for(i = argumentos->inicio; i < argumentos->final; i++){
+		suma += argumentos->arreglo[i]
+	}
+	
+	return (void *)suma;
+
+}
+
+int main (int argc, char *argv[]){
 srand(time(0));
 if (argc!=3){
 	printf("No se ingreso bien los parametros");
