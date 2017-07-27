@@ -19,4 +19,26 @@ double obtenerTiempoActual(){
 	return secs + nano;
 }
 
+int main (int argc, char *argv[]){
 
+srand(time(0));
+if (argc!=3){
+	printf("No se ingreso bien los parametros");
+}
+
+int size =atoi(argv[1]);
+int num_hilos = atoi(argv[2]);
+
+int *arreglo=NULL;
+arreglo= (int *) malloc(size * sizeof(int));
+
+int i=0;
+
+for (i;i<size;i++){
+	int num= aleatorio(1,200);
+	arreglo[i]=num;
+
+}
+
+
+}
