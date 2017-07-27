@@ -19,4 +19,26 @@ double obtenerTiempoActual(){
 	return secs + nano;
 }
 
+//estructura para pasar el arreglo y los indices
+typedef struct arregloindices{
+	int arreglo[];
+	int inicio;
+	int final;
+} estructura;
+
+void * funcion_hilo(void *arg){
+	
+	estructura *argumentos = (estructura *)arg;		//convertimos al tipo de dato correcto
+
+	int i = 0;
+
+	int suma = 0;
+	for(i = argumentos->inicio; i < argumentos->final; i++){
+		suma += argumentos->arreglo[i]
+	}
+	
+	return (void *)suma;
+
+}
+
 
