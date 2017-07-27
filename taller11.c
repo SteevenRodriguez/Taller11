@@ -22,7 +22,7 @@ double obtenerTiempoActual(){
 
 //estructura para pasar el arreglo y los indices
 typedef struct arregloindices{
-	int arreglo[];
+	int *arreglo;
 	int inicio;
 	int final;
 } estructura;
@@ -33,10 +33,10 @@ void * funcion_hilo(void *arg){
 
 	int i = 0;
 
-	int suma = (int) malloc (sizeof(int));
+	int *suma = (int *)malloc (sizeof(int));
 	for(i = argumentos->inicio; i <= argumentos->final; i++){
 		
-		suma += argumentos->arreglo[i]
+		suma += argumentos->arreglo[i];
 	}
 	
 	return (void *)suma;
@@ -56,40 +56,41 @@ int main (int argc, char *argv[]){
 	int *arreglo=NULL;
 	arreglo= (int *) malloc(size * sizeof(int));
 
-	int i=0;
+	int i;
 
-	for (i;i<size;i++){
+	for (i=0;i<size;i++){
 		int num= aleatorio(1,200);
 		arreglo[i]=num;
 
 	}
 	pthread_t hilos[num_hilos];
-	int j=0;
+	int j;
 	int razon = size/num_hilos;
 	int v=0;
-	for (j;j<num_hilo;j++){
+	for (j=0;j<num_hilos;j++){
 		estructura *s_hilo = malloc(sizeof(estructura));
-		s_hilo -> arreglo=&arreglo;
+		s_hilo -> arreglo=arreglo;
 		s_hilo -> inicio=v;
 		v += razon;
 		s_hilo -> final=v-1; 
 		int status=pthread_create(&hilos[j],NULL,funcion_hilo,(void*)s_hilo);
 		if(status<0){
-			fprintf(stderr,"Error al crear el hilo")
+			fprintf(stderr,"Error al crear el hilo");
 				}
 		
 	}
 
-	int h=0;
+	int h;
 	int total=0;
-	for (h;h<num_hilo;h++){
-		void *retorno = NULL
-		int status1= pthread_join(hilos[h]),&retorno);
-		total += (int)retorno;
+	for (h=0;h<num_hilos;h++){
+		void *retorno = NULL;
+		int status1= pthread_join(hilos[h],&retorno);
+		total += (long)retorno;
 		
 
 	}
+	printf ("La suma total es %d",total);
 	double time2 = obtenerTiempoActual();
 	double final= time2-time1;
-	printf ("El tiempo final de ejecuccion es %d",final); 
+	printf ("El tiempo final de ejecuccion es %.9f\n",final);
 }
