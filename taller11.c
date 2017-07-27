@@ -33,8 +33,9 @@ void * funcion_hilo(void *arg){
 
 	int i = 0;
 
-	int suma = 0;
-	for(i = argumentos->inicio; i < argumentos->final; i++){
+	int suma = (int) malloc (sizeof(int));
+	for(i = argumentos->inicio; i <= argumentos->final; i++){
+		
 		suma += argumentos->arreglo[i]
 	}
 	
@@ -43,24 +44,52 @@ void * funcion_hilo(void *arg){
 }
 
 int main (int argc, char *argv[]){
-srand(time(0));
-if (argc!=3){
-	printf("No se ingreso bien los parametros");
-}
+	double time1 = obtenerTiempoActual();
+	srand(time(0));
+	if (argc!=3){
+		printf("No se ingreso bien los parametros");
+	}
 
-int size =atoi(argv[1]);
-int num_hilos = atoi(argv[2]);
+	int size =atoi(argv[1]);
+	int num_hilos = atoi(argv[2]);
 
-int *arreglo=NULL;
-arreglo= (int *) malloc(size * sizeof(int));
+	int *arreglo=NULL;
+	arreglo= (int *) malloc(size * sizeof(int));
 
-int i=0;
+	int i=0;
 
-for (i;i<size;i++){
-	int num= aleatorio(1,200);
-	arreglo[i]=num;
+	for (i;i<size;i++){
+		int num= aleatorio(1,200);
+		arreglo[i]=num;
 
-}
+	}
+	pthread_t hilos[num_hilos];
+	int j=0;
+	int razon = size/num_hilos;
+	int v=0;
+	for (j;j<num_hilo;j++){
+		estructura *s_hilo = malloc(sizeof(estructura));
+		s_hilo -> arreglo=&arreglo;
+		s_hilo -> inicio=v;
+		v += razon;
+		s_hilo -> final=v-1; 
+		int status=pthread_create(&hilos[j],NULL,funcion_hilo,(void*)s_hilo);
+		if(status<0){
+			fprintf(stderr,"Error al crear el hilo")
+				}
+		
+	}
 
+	int h=0;
+	int total=0;
+	for (h;h<num_hilo;h++){
+		void *retorno = NULL
+		int status1= pthread_join(hilos[h]),&retorno);
+		total += (int)retorno;
+		
 
+	}
+	double time2 = obtenerTiempoActual();
+	double final= time2-time1;
+	printf ("El tiempo final de ejecuccion es %d",final); 
 }
