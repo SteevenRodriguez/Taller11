@@ -1,0 +1,168 @@
+La suma de este hilo es 748248
+La suma total es 748248
+El tiempo final de ejecuccion es 0.000309706
+La suma de este hilo es 374099
+La suma de este hilo es 374149
+La suma total es 748248
+El tiempo final de ejecuccion es 0.000211000
+La suma de este hilo es 249970
+La suma de este hilo es 249198
+La suma de este hilo es 249080
+La suma total es 748248
+El tiempo final de ejecuccion es 0.000250578
+La suma de este hilo es 187635
+La suma de este hilo es 186464
+La suma de este hilo es 187653
+La suma de este hilo es 186496
+La suma total es 748248
+El tiempo final de ejecuccion es 0.000346422
+La suma de este hilo es 149520
+La suma de este hilo es 149618
+La suma de este hilo es 150233
+La suma de este hilo es 149657
+La suma de este hilo es 149220
+La suma total es 748248
+El tiempo final de ejecuccion es 0.000232697
+La suma de este hilo es 124994
+La suma de este hilo es 124136
+La suma de este hilo es 124976
+La suma de este hilo es 125062
+La suma de este hilo es 124551
+La suma de este hilo es 124529
+La suma total es 748248
+El tiempo final de ejecuccion es 0.000264883
+La suma de este hilo es 107487
+La suma de este hilo es 106620
+La suma de este hilo es 106799
+La suma de este hilo es 106846
+La suma de este hilo es 106787
+La suma de este hilo es 106965
+La suma de este hilo es 106744
+La suma total es 748248
+El tiempo final de ejecuccion es 0.000232220
+La suma de este hilo es 94415
+La suma de este hilo es 93336
+La suma de este hilo es 93998
+La suma de este hilo es 93497
+La suma de este hilo es 93655
+La suma de este hilo es 93220
+La suma de este hilo es 93160
+La suma de este hilo es 92967
+La suma total es 748248
+El tiempo final de ejecuccion es 0.000166655
+La suma de este hilo es 83812
+La suma de este hilo es 82991
+La suma de este hilo es 83212
+La suma de este hilo es 82910
+La suma de este hilo es 82633
+La suma de este hilo es 83181
+La suma de este hilo es 83086
+La suma de este hilo es 83553
+La suma de este hilo es 82870
+La suma total es 748248
+El tiempo final de ejecuccion es 0.000274420
+La suma de este hilo es 74713
+La suma de este hilo es 74825
+La suma de este hilo es 74676
+La suma de este hilo es 75520
+La suma de este hilo es 74894
+La suma de este hilo es 74395
+La suma de este hilo es 74346
+La suma de este hilo es 75311
+La suma de este hilo es 74844
+La suma de este hilo es 74724
+La suma total es 748248
+El tiempo final de ejecuccion es 0.000179529
+La suma de este hilo es 67792
+La suma de este hilo es 68142
+La suma de este hilo es 67707
+La suma de este hilo es 68334
+La suma de este hilo es 68037
+La suma de este hilo es 67907
+La suma de este hilo es 68467
+La suma de este hilo es 67929
+La suma de este hilo es 67868
+La suma de este hilo es 67912
+La suma de este hilo es 68153
+La suma total es 748248
+El tiempo final de ejecuccion es 0.000178099
+La suma de este hilo es 61995
+La suma de este hilo es 63011
+La suma de este hilo es 62640
+La suma de este hilo es 62338
+La suma de este hilo es 62350
+La suma de este hilo es 61798
+La suma de este hilo es 62603
+La suma de este hilo es 62714
+La suma de este hilo es 61965
+La suma de este hilo es 62346
+La suma de este hilo es 62240
+La suma de este hilo es 62248
+La suma total es 748248
+El tiempo final de ejecuccion es 0.000410080
+La suma de este hilo es 57371
+La suma de este hilo es 57919
+La suma de este hilo es 57526
+La suma de este hilo es 57433
+La suma de este hilo es 57395
+La suma de este hilo es 57857
+La suma de este hilo es 58016
+La suma de este hilo es 57427
+La suma de este hilo es 57451
+La suma de este hilo es 58005
+La suma de este hilo es 57312
+La suma de este hilo es 57480
+La suma de este hilo es 57056
+La suma total es 748248
+El tiempo final de ejecuccion es 0.000378609
+La suma de este hilo es 53152
+La suma de este hilo es 53647
+La suma de este hilo es 53281
+La suma de este hilo es 53490
+La suma de este hilo es 53997
+La suma de este hilo es 53684
+La suma de este hilo es 52855
+La suma de este hilo es 53932
+La suma de este hilo es 53370
+La suma de este hilo es 53796
+La suma de este hilo es 53250
+La suma de este hilo es 53050
+La suma de este hilo es 53384
+La suma de este hilo es 53360
+La suma total es 748248
+El tiempo final de ejecuccion es 0.000379086
+La suma de este hilo es 49568
+La suma de este hilo es 50077
+La suma de este hilo es 49815
+La suma de este hilo es 50601
+La suma de este hilo es 49860
+La suma de este hilo es 49868
+La suma de este hilo es 49795
+La suma de este hilo es 50208
+La suma de este hilo es 49643
+La suma de este hilo es 49746
+La suma de este hilo es 50043
+La suma de este hilo es 49839
+La suma de este hilo es 49762
+La suma de este hilo es 49562
+La suma de este hilo es 49861
+La suma total es 748248
+El tiempo final de ejecuccion es 0.000427008
+La suma de este hilo es 46821
+La suma de este hilo es 46399
+La suma de este hilo es 47348
+La suma de este hilo es 47067
+La suma de este hilo es 46656
+La suma de este hilo es 46702
+La suma de este hilo es 46841
+La suma de este hilo es 46265
+La suma de este hilo es 47092
+La suma de este hilo es 46906
+La suma de este hilo es 46669
+La suma de este hilo es 46986
+La suma de este hilo es 46294
+La suma de este hilo es 47042
+La suma de este hilo es 46436
+La suma de este hilo es 46724
+La suma total es 748248
+El tiempo final de ejecuccion es 0.000367403

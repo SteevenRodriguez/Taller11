@@ -33,19 +33,19 @@ void * funcion_hilo(void *arg){
 
 	int i = 0;
 
-	long *suma = (long *)malloc (sizeof(long));
+	long suma = 0;
 	for(i = argumentos->inicio; i <= argumentos->final; i++){
 		
-		*suma += argumentos->arreglo[i];
+		suma += argumentos->arreglo[i];
 	}
-	printf ("La suma de este hilo es %ld\n",*suma);
+	printf ("La suma de este hilo es %lu\n", suma);
 	
-	return (void *) *suma;
+	return (void *) suma;
 
 }
 
 int main (int argc, char *argv[]){
-	
+	srand(time(NULL));
 	if (argc!=3){
 		printf("No se ingreso bien los parametros");
 	}
@@ -59,13 +59,13 @@ int main (int argc, char *argv[]){
 	int i;
 
 	for (i=0;i<size;i++){
-		int num= aleatorio(1,200);
+		int num= aleatorio(1,14);
 		arreglo[i]=num;
 
 	}
 	
 	double time1 = obtenerTiempoActual();
-	srand(time(0));
+	
 	pthread_t hilos[num_hilos];
 	int j;
 	int razon = size/num_hilos;
@@ -107,17 +107,19 @@ int main (int argc, char *argv[]){
 	int h;
 	long total=0;
 	for (h=0;h<num_hilos;h++){
-		void *retorno = NULL;
-		pthread_join(hilos[h],&retorno);
+		void *retorno = malloc(sizeof(long));
 		
-		total += (long) retorno;
+		pthread_join(hilos[h],retorno);
+		
+		total += *((long *) retorno);
 		
 		
 		
 
 	}
-	printf ("La suma total es %ld\n",total);
+	printf ("La suma total es %lu\n",total);
 	double time2 = obtenerTiempoActual();
 	double final= time2-time1;
 	printf ("El tiempo final de ejecuccion es %.9f\n",final);
+	return(0);
 }
