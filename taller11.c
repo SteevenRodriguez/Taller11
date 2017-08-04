@@ -70,7 +70,7 @@ int main (int argc, char *argv[]){
 	int j;
 	int razon = size/num_hilos;
 	int v=0;
-	if (size % num_hilos == 0){
+	if (size % num_hilos == 0){ //numeros con division exacta
 		for (j=0;j<num_hilos;j++){
 			estructura *s_hilo = malloc(sizeof(estructura));
 			s_hilo -> arreglo=arreglo;
@@ -85,7 +85,7 @@ int main (int argc, char *argv[]){
 		}
 	}
 	else{
-		for (j=0;j<num_hilos;j++){
+		for (j=0;j<num_hilos;j++){  //numeros con division no exacta
 			estructura *s_hilo = malloc(sizeof(estructura));
 			s_hilo -> arreglo=arreglo;
 			s_hilo -> inicio=v;
@@ -112,6 +112,7 @@ int main (int argc, char *argv[]){
 		pthread_join(hilos[h],retorno);
 		
 		total += *((long *) retorno);
+		free(retorno);
 		
 		
 		
@@ -122,5 +123,7 @@ int main (int argc, char *argv[]){
 	double final= time2-time1;
 	printf("%.9f\n",final);
 	//printf ("El tiempo final de ejecuccion es %.9f\n",final);
+	free(arreglo);
+	
 	return(0);
 }
