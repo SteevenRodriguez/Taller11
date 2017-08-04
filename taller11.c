@@ -38,7 +38,7 @@ void * funcion_hilo(void *arg){
 		
 		suma += argumentos->arreglo[i];
 	}
-	printf ("La suma de este hilo es %lu\n", suma);
+	//printf ("La suma de este hilo es %lu\n", suma);
 	
 	return (void *) suma;
 
@@ -117,9 +117,10 @@ int main (int argc, char *argv[]){
 		
 
 	}
-	printf ("La suma total es %lu\n",total);
+	//printf ("La suma total es %lu\n",total);
 	double time2 = obtenerTiempoActual();
 	double final= time2-time1;
-	printf ("El tiempo final de ejecuccion es %.9f\n",final);
+	printf("%.9f\n",final);
+	//printf ("El tiempo final de ejecuccion es %.9f\n",final);
 	return(0);
 }
